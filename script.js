@@ -41,8 +41,6 @@ btnSave.addEventListener("click", function () {
     })
   );
   mainContent.innerHTML = "";
-  document.querySelector(".title-name").value = "";
-  document.querySelector(".note").value = "";
   showNHideModal();
   renderNote();
   noteIdHandler = undefined;
@@ -101,6 +99,8 @@ renderNote();
 document.querySelector(".add-btn").addEventListener("click", showNHideModal);
 
 function showNHideModal() {
+  document.querySelector(".title-name").value = "";
+  document.querySelector(".note").value = "";
   let modalBg = document.querySelector(".note-dialog-bg");
   let modal = document.querySelector(".note-editor");
   modal.classList.toggle("scale");
