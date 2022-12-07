@@ -1,3 +1,3 @@
 # note-it
-note taking web app
-https://note-it.netlify.app
+Notes Web App:
+https://noteit.netlify.app
